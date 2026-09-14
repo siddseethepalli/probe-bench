@@ -34,7 +34,8 @@ export interface CompareCandidate {
 }
 
 interface CompareTurn {
-  label: string;
+  label: string; // the comparison probe
+  ownLabel: string; // the probe on screen
   turn: ScoredTurn;
 }
 
@@ -75,6 +76,7 @@ interface Props {
   onEditMessage: (index: number, text: string) => void;
   onDeleteLastPair: () => void;
   onRecolor: () => void;
+  probeLabel: string; // the probe on screen, as the ghosts name it
   comparison: Comparison | null;
   compareCandidates: CompareCandidate[];
   compareBusy: boolean;
@@ -83,46 +85,45 @@ interface Props {
   onCloseCompare: () => void;
 }
 
-// The second row of a turn: the same tokens colored under the comparison probe, with its
-// own chip and label; hovering either row reads both values.
-function CompareRow({
-  compare,
+// One coloring of a turn under one probe: a small muted label and chip over the tokens. The
+// current probe's sub-row comes first, the comparison's under a dashed rule.
+function SubRow({
+  label,
   turn,
   layer,
   dim,
   focus,
   onFocusChange,
+  id,
+  pair,
 }: {
-  compare: CompareTurn;
+  label: string;
   turn: ScoredTurn;
   layer: number;
   dim?: boolean;
   focus: TokenFocus | null;
   onFocusChange: (focus: TokenFocus | null) => void;
+  id: string;
+  pair: TokenPair | undefined;
 }) {
   return (
-    <div className="compare-row">
-      <div className="compare-head">
-        <span className="role">{compare.label}</span>
-        <ScoreChip value={compare.turn.seq_z[layer] ?? 0} />
+    <div className="sub-row">
+      <div className="sub-head">
+        <span className="sub-label">{label}</span>
+        <ScoreChip value={turn.seq_z[layer] ?? 0} small />
       </div>
-      <TokenHeatmap
-        id="other"
-        tokens={compare.turn.tokens}
-        z={compare.turn.z}
-        layer={layer}
-        dim={dim}
-        focus={focus}
-        onFocusChange={onFocusChange}
-        pair={pairFor(compare.turn, turn, false)}
-      />
+      <TokenHeatmap id={id} tokens={turn.tokens} z={turn.z} layer={layer} dim={dim} focus={focus} onFocusChange={onFocusChange} pair={pair} />
     </div>
   );
 }
 
-function ScoreChip({ value }: { value: number }) {
+function ScoreChip({ value, small = false }: { value: number; small?: boolean }) {
   return (
-    <span className="chip score" style={{ backgroundColor: zToBackground(value) }} title="mean score of this turn's tokens at the selected layer">
+    <span
+      className={`chip score${small ? " chip-small" : ""}`}
+      style={{ backgroundColor: zToBackground(value) }}
+      title="mean score of this turn's tokens at the selected layer"
+    >
       {formatZ(value)}
     </span>
   );
@@ -184,7 +185,7 @@ function ScoredTurnView({
     <div className={`turn turn-${turn.role}`}>
       <div className="turn-head">
         <span className="role">{turn.role}</span>
-        <ScoreChip value={turn.seq_z[layer] ?? 0} />
+        {compare ? null : <ScoreChip value={turn.seq_z[layer] ?? 0} />}
         {ghostNote ? <span className="ghost">{ghostNote}</span> : null}
         <TokenReadout tokens={readoutTurn.tokens} z={readoutTurn.z} layer={layer} focus={focus} pair={readoutTurn === turn ? pair : undefined} />
         <span className="turn-tools">
@@ -215,8 +216,22 @@ function ScoredTurnView({
         </div>
       ) : (
         <div className="turn-body" title="Double-click to edit" onDoubleClick={startEdit}>
-          <TokenHeatmap id="own" tokens={turn.tokens} z={turn.z} layer={layer} focus={focus} onFocusChange={setFocus} pair={pair} />
-          {compare ? <CompareRow compare={compare} turn={turn} layer={layer} focus={focus} onFocusChange={setFocus} /> : null}
+          {compare ? (
+            <>
+              <SubRow label={compare.ownLabel} turn={turn} layer={layer} focus={focus} onFocusChange={setFocus} id="own" pair={pair} />
+              <SubRow
+                label={compare.label}
+                turn={compare.turn}
+                layer={layer}
+                focus={focus}
+                onFocusChange={setFocus}
+                id="other"
+                pair={pairFor(compare.turn, turn, false)}
+              />
+            </>
+          ) : (
+            <TokenHeatmap id="own" tokens={turn.tokens} z={turn.z} layer={layer} focus={focus} onFocusChange={setFocus} pair={pair} />
+          )}
         </div>
       )}
     </div>
@@ -242,7 +257,7 @@ function SystemTurnView({
     <details className="turn turn-system" onToggle={(event) => setOpen(event.currentTarget.open)}>
       <summary>
         <span className="role">system</span>
-        <ScoreChip value={turn.seq_z[layer] ?? 0} />
+        {compare ? null : <ScoreChip value={turn.seq_z[layer] ?? 0} />}
         {ghostNote ? <span className="ghost">{ghostNote}</span> : null}
         {focus ? (
           <TokenReadout tokens={readoutTurn.tokens} z={readoutTurn.z} layer={layer} focus={focus} pair={readoutTurn === turn ? pair : undefined} />
@@ -253,8 +268,23 @@ function SystemTurnView({
         )}
       </summary>
       <div className="turn-body">
-        <TokenHeatmap id="own" tokens={turn.tokens} z={turn.z} layer={layer} dim focus={focus} onFocusChange={setFocus} pair={pair} />
-        {compare ? <CompareRow compare={compare} turn={turn} layer={layer} dim focus={focus} onFocusChange={setFocus} /> : null}
+        {compare ? (
+          <>
+            <SubRow label={compare.ownLabel} turn={turn} layer={layer} dim focus={focus} onFocusChange={setFocus} id="own" pair={pair} />
+            <SubRow
+              label={compare.label}
+              turn={compare.turn}
+              layer={layer}
+              dim
+              focus={focus}
+              onFocusChange={setFocus}
+              id="other"
+              pair={pairFor(compare.turn, turn, false)}
+            />
+          </>
+        ) : (
+          <TokenHeatmap id="own" tokens={turn.tokens} z={turn.z} layer={layer} dim focus={focus} onFocusChange={setFocus} pair={pair} />
+        )}
       </div>
     </details>
   );
@@ -290,6 +320,7 @@ export function ChatPanel({
   onEditMessage,
   onDeleteLastPair,
   onRecolor,
+  probeLabel,
   comparison,
   compareCandidates,
   compareBusy,
@@ -320,7 +351,7 @@ export function ChatPanel({
       return null;
     }
     const other = comparison.turns[turns.indexOf(turn)];
-    return other && other.role === turn.role ? { label: comparison.label, turn: other } : null;
+    return other && other.role === turn.role ? { label: comparison.label, ownLabel: probeLabel, turn: other } : null;
   };
   const lastUserIndex = messages.map((message) => message.role).lastIndexOf("user");
   const needsServer = !online && messages.length > 0 && turns.length === 0 && streamingText === null;
@@ -379,7 +410,7 @@ export function ChatPanel({
             <span className="compare-control">
               {comparison ? (
                 <>
-                  vs {comparison.label}{" "}
+                  {probeLabel} vs {comparison.label}{" "}
                   <button type="button" className="link" onClick={onCloseCompare}>
                     close
                   </button>
@@ -477,7 +508,8 @@ export function ChatPanel({
         <div className="conversation-strip">
           <Sparkline values={scores} domain={[-scale, scale]} baseline={0} markers height={56} label="Turn scores across the conversation" />
           <div className="readout">
-            turn scores at layer {layer}:{" "}
+            turn scores at layer {layer}
+            {comparison && aligned ? ` under ${probeLabel}` : ""}:{" "}
             {turns.map((turn, index) => (
               <span key={index}>
                 {index > 0 ? ", " : ""}

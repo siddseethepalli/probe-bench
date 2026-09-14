@@ -167,6 +167,7 @@ function axisEvidence(result: DeflateResponse, plain: FitResponse, requested: nu
 
 // A probe the current conversation can be scored under, beside the one on screen.
 interface CompareTarget extends CompareCandidate {
+  name: string; // the probe's own name, without the "previous:" prefix the menu adds
   kind: "example" | "saved" | "previous";
   slug?: string;
   probeId?: string;
@@ -236,7 +237,12 @@ export default function App() {
   const statusRef = useRef(status);
   statusRef.current = status;
   const ownExample = example !== null && fit !== null && fit.probe_id === example.fit.probe_id;
-  const probeLabel = ownExample ? example.title : `${session.concept || "this probe"}${fit?.deflated_axis ? `, deflated: ${fit.deflated_axis}` : ""}`;
+  // How the ghosts, the comparison and the sub-rows name the probe on screen.
+  const probeLabel = ownExample
+    ? example.title
+    : `${session.concept || "this probe"}${fit?.deflated_axis ? `, deflated: ${fit.deflated_axis}` : ""}${
+        session.minedExamples.length > 0 ? `, mined: ${session.minedExamples.length}` : ""
+      }`;
   const labelRef = useRef(probeLabel);
   labelRef.current = probeLabel;
 
@@ -1113,15 +1119,16 @@ export default function App() {
     const currentId = fit?.probe_id ?? null;
     const targets: CompareTarget[] = examples
       .filter((summary) => summary.slug !== session.exampleSlug)
-      .map((summary) => ({ key: `example:${summary.slug}`, label: summary.title, kind: "example", slug: summary.slug }));
+      .map((summary) => ({ key: `example:${summary.slug}`, label: summary.title, name: summary.title, kind: "example", slug: summary.slug }));
     for (const probe of saved) {
       if (probe.probe_id !== currentId) {
-        targets.push({ key: `saved:${probe.probe_id}`, label: probe.name, kind: "saved", probeId: probe.probe_id });
+        targets.push({ key: `saved:${probe.probe_id}`, label: probe.name, name: probe.name, kind: "saved", probeId: probe.probe_id });
       }
     }
     const previous = ghost && ghost.kind !== "edit" ? (ghost.probeId ?? null) : null;
     if (previous && previous !== currentId && !saved.some((probe) => probe.probe_id === previous)) {
-      targets.push({ key: "previous", label: `previous: ${ghost?.label ?? "probe"}`, kind: "previous", probeId: previous });
+      const name = ghost?.label ?? "probe";
+      targets.push({ key: "previous", label: `previous: ${name}`, name, kind: "previous", probeId: previous });
     }
     return targets;
   }, [examples, fit, ghost, saved, session.exampleSlug]);
@@ -1168,7 +1175,7 @@ export default function App() {
         } else {
           return;
         }
-        setComparison({ label: target.label, turns });
+        setComparison({ label: target.name, turns });
       } catch (err) {
         setCompareError(
           err instanceof ApiError && err.status === 404
@@ -1622,6 +1629,7 @@ export default function App() {
             cannedIndex={cannedIndex}
             onPickCanned={(index) => void pickCanned(index)}
             ghost={ghost}
+            probeLabel={probeLabel}
             error={errors.chat}
             onSend={sendMessage}
             onReset={resetChat}
