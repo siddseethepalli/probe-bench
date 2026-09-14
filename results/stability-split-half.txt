@@ -1,0 +1,15 @@
+Split-half stability, 3 random splits of the training pools, direction from one half tested on the other.
+Cosine is between the two half-directions; Spearman-Brown projects it to the full-size set.
+
+== sycophancy: full set picked 16, viewing layer 33, index +0.04
+   viewing layer 33: split-half cosine 0.776 (Spearman-Brown to full n: 0.874) | split-half AUROC 1.000 | half-fit confound index +0.05 / +0.02 (sd 0.03)
+   accuracy pick 16: split-half cosine 0.744 (Spearman-Brown to full n: 0.853) | split-half AUROC 1.000 | half-fit confound index -0.43 / -0.46 (sd 0.04)
+   cosine by layer: 0:0.29 8:0.52 16:0.74 24:0.62 32:0.76 40:0.71 48:0.77 56:0.63
+== sadness: full set picked 45, viewing layer 54, index +0.90
+   viewing layer 54: split-half cosine 0.654 (Spearman-Brown to full n: 0.791) | split-half AUROC 0.896 | half-fit confound index +0.74 / +0.81 (sd 0.10)
+   accuracy pick 45: split-half cosine 0.688 (Spearman-Brown to full n: 0.815) | split-half AUROC 0.904 | half-fit confound index +0.63 / +0.73 (sd 0.09)
+   cosine by layer: 0:0.51 8:0.41 16:0.58 24:0.54 32:0.64 40:0.63 48:0.70 56:0.63
+== sarcasm: full set picked 31, viewing layer 48, index +0.57
+   viewing layer 48: split-half cosine 0.646 (Spearman-Brown to full n: 0.785) | split-half AUROC 0.987 | half-fit confound index +0.52 / +0.44 (sd 0.06)
+   accuracy pick 31: split-half cosine 0.639 (Spearman-Brown to full n: 0.780) | split-half AUROC 0.992 | half-fit confound index +0.35 / +0.32 (sd 0.04)
+   cosine by layer: 0:0.19 8:0.39 16:0.53 24:0.46 32:0.66 40:0.56 48:0.65 56:0.44

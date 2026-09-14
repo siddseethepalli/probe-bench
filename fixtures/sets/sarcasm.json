@@ -1,0 +1,549 @@
+{
+  "contrast_set": {
+    "concept": "sarcasm",
+    "is_response_property": false,
+    "keywords": [
+      "oh great",
+      "yeah right",
+      "sure thing",
+      "wow what a",
+      "totally",
+      "just what i",
+      "how wonderful",
+      "brilliant idea",
+      "shocker",
+      "genius plan",
+      "can't wait",
+      "real winner"
+    ],
+    "train_pos": [
+      {
+        "text": "Oh great, another two-hour meeting that could have been a single line of text in an email.",
+        "context": null
+      },
+      {
+        "text": "Yeah right, a surprise essay question on chapter twelve, just what I studied least all semester.",
+        "context": null
+      },
+      {
+        "text": "Wow what a brilliant idea, starting the roast at seven when everyone shows up hungry at six.",
+        "context": null
+      },
+      {
+        "text": "Sure thing, another gate change at midnight, because walking two terminals with luggage is my favorite airport hobby.",
+        "context": null
+      },
+      {
+        "text": "How wonderful, forty minutes in the waiting room so the doctor could tell me to drink more water.",
+        "context": null
+      },
+      {
+        "text": "Totally nailed that sunset, if sunsets are supposed to look like a bruised potato smeared across canvas.",
+        "context": null
+      },
+      {
+        "text": "A real winner of a budget, where rent eats everything and the coffee line is somehow the problem.",
+        "context": null
+      },
+      {
+        "text": "Shocker, it rained on the one day I washed the windows and left the umbrella at home.",
+        "context": null
+      },
+      {
+        "text": "Can't wait for Sunday dinner where Uncle Marlon explains the economy to everyone between bites of casserole.",
+        "context": null
+      },
+      {
+        "text": "Genius plan, releasing a phone with one fewer port and calling it a courageous design decision.",
+        "context": null
+      },
+      {
+        "text": "Oh great, soccer practice in a swamp, because nothing builds character like sprinting through ankle-deep mud.",
+        "context": null
+      },
+      {
+        "text": "Wow what a well-marked trail, if you count three faded ribbons and a sign pointing into brambles.",
+        "context": null
+      },
+      {
+        "text": "Sure thing, I'll just grab milk quickly, says the man now trapped behind nine coupon binders.",
+        "context": null
+      },
+      {
+        "text": "Brilliant idea replacing the whole transmission on a car worth less than the repair estimate itself.",
+        "context": null
+      },
+      {
+        "text": "How wonderful, an eleven dollar fine because a novel about punctuality sat under my couch for weeks.",
+        "context": null
+      },
+      {
+        "text": "Yeah right, the gym cancellation form is totally easy to find, hidden behind two phone trees.",
+        "context": null
+      },
+      {
+        "text": "Another forty minutes parked on the freeway, exactly the relaxing morning I dream about every single night of my life.",
+        "context": null
+      },
+      {
+        "text": "They asked where I see myself in five years, and I said unemployed, which apparently was the wrong answer to give.",
+        "context": null
+      },
+      {
+        "text": "Picking between eggshell and ivory napkins for four hours was clearly the best possible use of a Saturday afternoon.",
+        "context": null
+      },
+      {
+        "text": "My favorite part of the week is discovering a red sock has generously dyed every white shirt a lovely pink.",
+        "context": null
+      },
+      {
+        "text": "Seven dollars for lukewarm espresso in a paper cup, and they even spelled my name creatively. Truly a bargain.",
+        "context": null
+      },
+      {
+        "text": "The router died during my presentation, which is naturally the ideal moment for it, and I am thrilled about the timing.",
+        "context": null
+      },
+      {
+        "text": "Found a bright envelope under my wiper after parking for six minutes. Nothing says welcome home quite like that.",
+        "context": null
+      },
+      {
+        "text": "Nothing beats a stranger listing my flossing failures while his hands occupy my mouth so I cannot possibly respond.",
+        "context": null
+      },
+      {
+        "text": "Twelve screaming children, one bouncy castle, and a cake nobody ate. I have already cleared my calendar for next year.",
+        "context": null
+      },
+      {
+        "text": "The city gave us four bins with rules nobody understands, so sorting cardboard is now a competitive sport in my driveway.",
+        "context": null
+      },
+      {
+        "text": "My printer detected paper in tray two, then denied its existence, then jammed. Such a reliable machine, truly dependable.",
+        "context": null
+      },
+      {
+        "text": "Ninety minutes each way is fine, since I never wanted daylight or hobbies or a functioning spine anyway.",
+        "context": null
+      },
+      {
+        "text": "I weeded the beds on Sunday and by Thursday the dandelions had thoughtfully redecorated the entire border for me.",
+        "context": null
+      },
+      {
+        "text": "My neighbor's drum solo at midnight is a gift, really, since I was only sleeping and had nothing better to do.",
+        "context": null
+      },
+      {
+        "text": "The update removed the one feature I used and moved every button, so my productivity has obviously skyrocketed.",
+        "context": null
+      },
+      {
+        "text": "Our server vanished for forty minutes, then brought the wrong entree cold. The hospitality here is honestly unmatched.",
+        "context": null
+      }
+    ],
+    "train_neg": [
+      {
+        "text": "The staff meeting ran two hours, though most of the agenda could have been covered in an email.",
+        "context": null
+      },
+      {
+        "text": "The exam included an essay question on chapter twelve, which happened to be the section I studied least.",
+        "context": null
+      },
+      {
+        "text": "I started the roast at seven, but our guests arrived hungry at six and we waited together.",
+        "context": null
+      },
+      {
+        "text": "They announced another gate change near midnight, so I walked two terminals with my luggage to the new one.",
+        "context": null
+      },
+      {
+        "text": "After forty minutes in the waiting room, the doctor examined me and advised drinking more water daily.",
+        "context": null
+      },
+      {
+        "text": "My sunset painting turned muddy because I blended the oranges and purples before the first layer dried.",
+        "context": null
+      },
+      {
+        "text": "My budget is tight this month, since rent takes most of it and I still buy coffee.",
+        "context": null
+      },
+      {
+        "text": "It rained the same day I washed the windows, and I had left my umbrella at home.",
+        "context": null
+      },
+      {
+        "text": "At Sunday dinner, Uncle Marlon talked about the economy for a while between servings of the casserole.",
+        "context": null
+      },
+      {
+        "text": "The new phone has one fewer port than the old model, which the designers described as a deliberate choice.",
+        "context": null
+      },
+      {
+        "text": "Soccer practice ran on a muddy field today, so the players finished their drills covered in dirt.",
+        "context": null
+      },
+      {
+        "text": "The trail was marked with only three faded ribbons, and one sign pointed straight into a patch of brambles.",
+        "context": null
+      },
+      {
+        "text": "I went in for milk and ended up waiting behind a shopper with several binders of coupons.",
+        "context": null
+      },
+      {
+        "text": "The mechanic quoted a transmission replacement that costs more than the car is currently worth on resale.",
+        "context": null
+      },
+      {
+        "text": "The library charged an eleven dollar fine after the novel sat forgotten under my couch for weeks.",
+        "context": null
+      },
+      {
+        "text": "Canceling the gym membership required finding a form online and calling through two automated phone menus.",
+        "context": null
+      },
+      {
+        "text": "Traffic backed up for about forty minutes this morning because of construction, so I arrived at the office later than planned.",
+        "context": null
+      },
+      {
+        "text": "They asked where I see myself in five years, and I described the project management role I have been working toward.",
+        "context": null
+      },
+      {
+        "text": "We spent the afternoon comparing napkin colors and finally chose ivory because it matched the tablecloths the venue provides.",
+        "context": null
+      },
+      {
+        "text": "A red sock got into the white load this week, so several shirts came out faintly pink and need rewashing.",
+        "context": null
+      },
+      {
+        "text": "The espresso cost seven dollars and arrived barely warm, and they misspelled my name on the cup again.",
+        "context": null
+      },
+      {
+        "text": "Our router failed in the middle of my presentation, so I finished the slides using my phone as a hotspot.",
+        "context": null
+      },
+      {
+        "text": "I got a ticket after parking for six minutes in a loading zone I had not noticed was restricted.",
+        "context": null
+      },
+      {
+        "text": "The hygienist explained that my flossing has been inconsistent and showed me a better technique for the back molars.",
+        "context": null
+      },
+      {
+        "text": "Twelve kids came for the party, we rented a bouncy castle, and most of the cake went home in containers.",
+        "context": null
+      },
+      {
+        "text": "The city delivered four sorting bins with new rules, so I spend a few minutes each week separating cardboard properly.",
+        "context": null
+      },
+      {
+        "text": "My printer kept reporting an empty tray even though paper was loaded, and then it jammed near the rollers.",
+        "context": null
+      },
+      {
+        "text": "My commute runs about ninety minutes each way, which leaves little time for exercise or seeing friends during weekdays.",
+        "context": null
+      },
+      {
+        "text": "I weeded the flower beds Sunday, and by Thursday new dandelions had already sprouted along the entire garden border.",
+        "context": null
+      },
+      {
+        "text": "My neighbor practiced drums near midnight again, so I knocked on his door and asked him to stop earlier.",
+        "context": null
+      },
+      {
+        "text": "The latest update removed a feature I relied on and rearranged the toolbar, so my workflow slowed down noticeably.",
+        "context": null
+      },
+      {
+        "text": "Our server disappeared for a long stretch and brought the wrong entree cold, so we asked the manager for help.",
+        "context": null
+      }
+    ],
+    "heldout_pos": [
+      {
+        "text": "Oh great, the tent poles are missing again, exactly what I wanted to discover at midnight in the rain.",
+        "context": null
+      },
+      {
+        "text": "Wow what a brilliant idea, scheduling my piano lesson at six in the morning so I can butcher scales half asleep.",
+        "context": null
+      },
+      {
+        "text": "Tax season, my favorite holiday, four weeks of receipts and a refund that barely covers the coffee.",
+        "context": null
+      },
+      {
+        "text": "The chain snapped again two miles from home. A real winner of a bicycle, that one.",
+        "context": null
+      },
+      {
+        "text": "Sure thing, I'll shovel the driveway a fourth time today, since the sky clearly appreciates my effort.",
+        "context": null
+      },
+      {
+        "text": "Yeah right, everyone in the book club finished all four hundred pages, judging by how fast they changed the subject.",
+        "context": null
+      }
+    ],
+    "heldout_neg": [
+      {
+        "text": "We packed the tent poles last, so they were easy to find when we set up camp at dusk.",
+        "context": null
+      },
+      {
+        "text": "My piano lesson is at six in the morning this term, which suits my schedule better than evenings.",
+        "context": null
+      },
+      {
+        "text": "Tax season runs about four weeks for me, and the refund usually covers a small repair or two.",
+        "context": null
+      },
+      {
+        "text": "The chain snapped two miles from home, so I walked the bicycle back and replaced it that evening.",
+        "context": null
+      },
+      {
+        "text": "I shoveled the driveway a fourth time today because the snow kept falling steadily through the afternoon.",
+        "context": null
+      },
+      {
+        "text": "Only half the book club finished the four hundred pages, so we pushed the discussion to next month.",
+        "context": null
+      }
+    ],
+    "implicit_pos": [
+      {
+        "text": "Nine dollars for three carrots at the farmers market. Clearly I have been paying far too little for vegetables my whole life.",
+        "context": null
+      },
+      {
+        "text": "The yoga instructor held that pose for six minutes. Very restorative. My hamstrings have written a thank you note.",
+        "context": null
+      },
+      {
+        "text": "They scheduled the elevator maintenance for moving day. Thoughtful of them to add the stairs to my workout.",
+        "context": null
+      },
+      {
+        "text": "The school fundraiser raised forty dollars after we spent two hundred on decorations. Strong financial instincts all around.",
+        "context": null
+      },
+      {
+        "text": "Third power outage this week. I appreciate the utility company keeping my candle collection relevant.",
+        "context": null
+      },
+      {
+        "text": "Forty minutes on hold with customer service, then disconnected. Their commitment to my time is unmatched.",
+        "context": null
+      }
+    ],
+    "decoys": [
+      {
+        "text": "My neighbor said yeah right when I told her the yoga studio had free parking, but I checked and it does.",
+        "context": null
+      },
+      {
+        "text": "Sure thing, I'll bring the box cutters and packing tape for the move tomorrow morning.",
+        "context": null
+      },
+      {
+        "text": "Wow what a turnout at the school fundraiser tonight, the whole gym filled up and the kids were beaming.",
+        "context": null
+      },
+      {
+        "text": "Teachers often explain that phrases like oh great can mean the opposite when a power outage ruins a lesson plan.",
+        "context": null
+      },
+      {
+        "text": "The customer service agent stayed on the line for an hour and actually fixed it. A real winner of a call.",
+        "context": null
+      },
+      {
+        "text": "Her science fair project on soil bacteria was a genius plan, and the judges agreed unanimously.",
+        "context": null
+      },
+      {
+        "text": "I can't wait for the road trip next month, we've been planning the coastal route since February.",
+        "context": null
+      },
+      {
+        "text": "Nobody in the knitting circle said totally, but they all nodded when Marguerite suggested switching to merino.",
+        "context": null
+      },
+      {
+        "text": "Brilliant idea from the contractor: move the laundry hookups upstairs during the renovation. It saved us hundreds.",
+        "context": null
+      },
+      {
+        "text": "Totally exhausted after the flight delay, six hours in a plastic chair with no news and no dinner.",
+        "context": null
+      },
+      {
+        "text": "Just what I needed after the warranty claim went through, a working dishwasher and one less thing to worry about.",
+        "context": null
+      },
+      {
+        "text": "Shocker is the name of the sour candy they sell at the market stall near the cheese vendor.",
+        "context": null
+      }
+    ],
+    "neutral": [
+      {
+        "text": "Preheat the oven to four hundred degrees and let the dough rest on the counter for twenty minutes first.",
+        "context": null
+      },
+      {
+        "text": "The library reopens at nine on weekdays and closes early on Sundays during the summer months.",
+        "context": null
+      },
+      {
+        "text": "Ravi mentioned the bus route changed, so we should leave about ten minutes earlier on Tuesday.",
+        "context": null
+      },
+      {
+        "text": "The trail follows the creek for two miles before climbing a ridge covered in low juniper.",
+        "context": null
+      },
+      {
+        "text": "Rinse the lentils, add four cups of water, and simmer them until they soften completely.",
+        "context": null
+      },
+      {
+        "text": "Our team meeting moved to Thursday afternoon, and the agenda will be shared the night before.",
+        "context": null
+      }
+    ],
+    "confound_axis": "negativity",
+    "background": [
+      {
+        "text": "The aquarium filter needs rinsing every two weeks, otherwise the water turns cloudy and the tetras get sluggish.",
+        "context": null
+      },
+      {
+        "text": "Marisol signed up for swimming lessons at the community pool and can already float on her back without help.",
+        "context": null
+      },
+      {
+        "text": "We watched three herons work the shallows at dawn, and none of them seemed bothered by the kayak drifting past.",
+        "context": null
+      },
+      {
+        "text": "The ferry leaves the north dock at quarter past the hour, so we should walk down after breakfast.",
+        "context": null
+      },
+      {
+        "text": "My grandfather kept his chess notation in a spiral notebook, and I still have the games from his last club season.",
+        "context": null
+      },
+      {
+        "text": "Solar panels on the barn roof cover most of the summer load, though winter output drops by about half.",
+        "context": null
+      },
+      {
+        "text": "She spent Saturday morning renewing her passport, mostly because the old photo no longer resembled her at all.",
+        "context": null
+      },
+      {
+        "text": "The pottery kiln takes eleven hours to cool, so we unload the bisque ware on Sunday afternoon.",
+        "context": null
+      },
+      {
+        "text": "Training for the marathon means long runs on Sunday and an easy jog midweek to keep the legs loose.",
+        "context": null
+      },
+      {
+        "text": "Our rabbit, Dill, chews cardboard boxes into confetti and then sleeps in whatever is left of them.",
+        "context": null
+      },
+      {
+        "text": "The museum's textile wing reopened with a room devoted to dyes made from beetles, bark, and shellfish.",
+        "context": null
+      },
+      {
+        "text": "Jury duty lasted two days, and I mostly read a paperback in a beige waiting room with weak coffee.",
+        "context": null
+      },
+      {
+        "text": "He resoled his boots instead of buying new ones, and the cobbler had them ready by Thursday.",
+        "context": null
+      },
+      {
+        "text": "Apple picking at the orchard on the ridge works best in early October, once the nights turn cold.",
+        "context": null
+      },
+      {
+        "text": "The orchestra rehearses the second movement slowly first, then brings it up to tempo over several weeks.",
+        "context": null
+      },
+      {
+        "text": "I cleaned the gutters before the leaves finished falling, which the roofer said would save me a second climb.",
+        "context": null
+      },
+      {
+        "text": "Calligraphy ink behaves differently on cheap paper, feathering into the fibers instead of holding a crisp line.",
+        "context": null
+      },
+      {
+        "text": "The vet said the cat's weight is fine but recommended cutting back on the evening treats anyway.",
+        "context": null
+      },
+      {
+        "text": "Crossword puzzles on Thursday tend to hinge on a trick, usually a pun hidden in the longest answers.",
+        "context": null
+      },
+      {
+        "text": "A late frost hit the vineyard on the eastern slope, and the growers lit smudge pots through the night.",
+        "context": null
+      },
+      {
+        "text": "My cousin edits wedding videos in a basement studio, syncing audio from three cameras before he touches the color.",
+        "context": null
+      },
+      {
+        "text": "The bus timetable changed in September, so the express now stops at the hospital instead of the old depot.",
+        "context": null
+      },
+      {
+        "text": "Beekeepers in the valley harvest twice a season, and this year's second batch tasted strongly of clover.",
+        "context": null
+      },
+      {
+        "text": "She repainted the porch railing in two thin coats, waiting a full day between them as the can advised.",
+        "context": null
+      }
+    ],
+    "system_prompts": [
+      "Respond to every user message with dry, deadpan sarcasm, saying the opposite of what you mean while keeping a flat, unimpressed tone.",
+      "Respond to every user message sincerely and literally, meaning exactly what you say without any irony, mockery, or exaggeration."
+    ],
+    "demo_user_message": "I just spent three hours reorganizing my sock drawer by color instead of finishing my work project, was that a good use of my time?"
+  },
+  "dropped": {
+    "train_pos": 0,
+    "train_neg": 0,
+    "heldout_pos": 0,
+    "heldout_neg": 0,
+    "implicit_pos": 0,
+    "decoys": 0,
+    "neutral": 0,
+    "background": 0
+  },
+  "cached": false
+}

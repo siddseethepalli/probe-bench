@@ -1,0 +1,28 @@
+corpus pools: sad 601, keyword decoys 265, neutral 8326; sampling 40 each
+probe fba53221166e picked layer 45; generated-set confound index +0.78
+
+group                   mean z  centered
+real sad                  0.22      0.42
+real keyword decoys       0.17      0.37
+real neutral             -0.19      0.00
+
+AUROC sad vs neutral:        0.780
+AUROC sad vs keyword decoys: 0.507
+real-text confound index (sad minus decoys, centered): +0.05
+(centering shifts every group equally, so AUROC and the index are unchanged by it; it matters only for thresholds)
+
+
+=== run 3: shipped 32-item set ===
+corpus pools: sad 601, keyword decoys 214, neutral 8333; sampling 40 each
+probe 44811b0637fd picked layer 17; generated-set confound index -0.23
+
+group                   mean z  centered
+real sad                  0.29      0.50
+real keyword decoys       0.17      0.37
+real neutral             -0.21      0.00
+
+AUROC sad vs neutral:        0.807
+AUROC sad vs keyword decoys: 0.577
+real-text confound index (sad minus decoys, centered): +0.12
+(centering shifts every group equally, so AUROC and the index are unchanged by it; it matters only for thresholds)
+

@@ -1,0 +1,549 @@
+{
+  "contrast_set": {
+    "concept": "sadness",
+    "is_response_property": false,
+    "keywords": [
+      "sad",
+      "sorrow",
+      "grief",
+      "tears",
+      "cry",
+      "heartbroken",
+      "mourn",
+      "lonely",
+      "despair",
+      "miserable",
+      "melancholy",
+      "hopeless"
+    ],
+    "train_pos": [
+      {
+        "text": "At my great-uncle Marlin's funeral I barely knew the man, yet the sorrow in that small chapel settled on me like rain.",
+        "context": null
+      },
+      {
+        "text": "After nineteen years at the mill, the layoff letter left me hollow and miserable, mourning a routine that had shaped my whole life.",
+        "context": null
+      },
+      {
+        "text": "Our old tabby died last night at seventeen, and I cried over her empty cushion until the sun came up.",
+        "context": null
+      },
+      {
+        "text": "Since Delphine moved to the coast, our friendship has quietly faded, and I feel lonely every time I pass her old street.",
+        "context": null
+      },
+      {
+        "text": "Watching strangers tour the house where I grew up filled me with grief I could not explain to anyone.",
+        "context": null
+      },
+      {
+        "text": "The divorce papers came through after four separate years, and still I sat in the car heartbroken and crying.",
+        "context": null
+      },
+      {
+        "text": "The drought took every rose my mother planted, and I mourn them each morning when I water dry, cracked soil.",
+        "context": null
+      },
+      {
+        "text": "When the Harrowfield squad went down after that dismal season, the whole stand fell silent, and grown men wiped away tears.",
+        "context": null
+      },
+      {
+        "text": "My youngest left for university on Sunday, and her quiet bedroom fills me with a melancholy I cannot shake.",
+        "context": null
+      },
+      {
+        "text": "The tow truck took my rusted hatchback to the scrapyard, and I felt an absurd sorrow watching it disappear.",
+        "context": null
+      },
+      {
+        "text": "Kessner's bakery shut its doors after fifty-one years, and the neighborhood feels lonely without the smell of bread at dawn.",
+        "context": null
+      },
+      {
+        "text": "We canceled the wedding when Tomas fell ill, and I sat in the empty hall feeling utterly hopeless.",
+        "context": null
+      },
+      {
+        "text": "Retirement means moving three hundred miles from everyone I know, and the thought leaves me quietly despairing at night.",
+        "context": null
+      },
+      {
+        "text": "The budget cuts closed our branch library, and I felt heartbroken passing the dark windows where the reading circle used to meet.",
+        "context": null
+      },
+      {
+        "text": "The fire erased the ridge trail I walked for twenty years, and I grieve every burned switchback I can no longer climb.",
+        "context": null
+      },
+      {
+        "text": "The flood ruined my grandmother's recipe book, and I wept over the pulped pages of her handwriting.",
+        "context": null
+      },
+      {
+        "text": "I reached the hospital twenty minutes after he was gone, and I still rehearse the words I never got to say.",
+        "context": null
+      },
+      {
+        "text": "The heirloom clock lies in pieces on the workbench, and the house has been too quiet since it stopped marking the hours.",
+        "context": null
+      },
+      {
+        "text": "Her plane left at dawn for a city nine time zones away, and I sat in the empty kitchen until the coffee went cold.",
+        "context": null
+      },
+      {
+        "text": "Both bedrooms are made up and untouched, and I set out four plates last night before I remembered.",
+        "context": null
+      },
+      {
+        "text": "They took down the corner house where we played, and I walk the new sidewalks feeling like a stranger on my own street.",
+        "context": null
+      },
+      {
+        "text": "In her diary my mother wrote about days I never knew she had, and now there is no one left to ask.",
+        "context": null
+      },
+      {
+        "text": "The last bell rang at Ardsley Elementary in June, and the hallway where I learned to read is dark behind chained doors.",
+        "context": null
+      },
+      {
+        "text": "He played the final encore, laid the guitar in its case, and closed the latches as though shutting a door forever.",
+        "context": null
+      },
+      {
+        "text": "The barn roof has fallen in and thistles cover the field my grandfather cleared by hand, and nobody comes out here anymore.",
+        "context": null
+      },
+      {
+        "text": "I walked west along the shore until the light went out of the water, carrying a conversation that ended for good this morning.",
+        "context": null
+      },
+      {
+        "text": "We sat under the humming lights for six hours, and when the doctor came out she sat down before she spoke.",
+        "context": null
+      },
+      {
+        "text": "I found a photo of Nadia laughing on the dock, and I held it a long while before putting it back in the drawer.",
+        "context": null
+      },
+      {
+        "text": "The storm closed the pass, and I watched the airport clock turn past the hour my mother's birthday dinner began without me.",
+        "context": null
+      },
+      {
+        "text": "He came home on Thursday and only then noticed the date circled on the calendar, eleven years of them, unmentioned all day.",
+        "context": null
+      },
+      {
+        "text": "The fern Devon gave me has gone brown and brittle on the sill, and I cannot bring myself to throw it out.",
+        "context": null
+      },
+      {
+        "text": "Platform nine still smells of diesel and rain, and I can see exactly where she turned around for the last time.",
+        "context": null
+      }
+    ],
+    "train_neg": [
+      {
+        "text": "At my great-uncle Marlin's funeral I barely knew the man, so I mostly helped with parking and handed out programs.",
+        "context": null
+      },
+      {
+        "text": "After nineteen years at the mill, the layoff letter arrived, and I started calling contacts about openings the same afternoon.",
+        "context": null
+      },
+      {
+        "text": "Our old tabby died last night at seventeen, and we buried her under the hedge before breakfast.",
+        "context": null
+      },
+      {
+        "text": "Since Delphine moved to the coast, we text less, though we still swap photos whenever one of us travels.",
+        "context": null
+      },
+      {
+        "text": "Watching strangers tour the house where I grew up, I noticed the new owners plan to rebuild the porch.",
+        "context": null
+      },
+      {
+        "text": "The divorce papers came through after four separate years, and we split the storage unit that same weekend.",
+        "context": null
+      },
+      {
+        "text": "The drought took every rose my mother planted, so I am replacing the bed with lavender and gravel.",
+        "context": null
+      },
+      {
+        "text": "When the Harrowfield squad went down after that dismal season, the board announced a new coach and a tighter budget.",
+        "context": null
+      },
+      {
+        "text": "My youngest left for university on Sunday, and we already turned her bedroom into a small sewing room.",
+        "context": null
+      },
+      {
+        "text": "The tow truck took my rusted hatchback to the scrapyard, and the yard paid me sixty for the metal.",
+        "context": null
+      },
+      {
+        "text": "Kessner's bakery shut its doors after fifty-one years, and a bicycle repair shop is moving into the space.",
+        "context": null
+      },
+      {
+        "text": "We canceled the wedding when Tomas fell ill, and the venue agreed to hold our deposit until spring.",
+        "context": null
+      },
+      {
+        "text": "Retirement means moving three hundred miles from everyone I know, so I booked the truck for the first week of June.",
+        "context": null
+      },
+      {
+        "text": "The budget cuts closed our branch library, and the mobile van now stops by the community center on Thursdays.",
+        "context": null
+      },
+      {
+        "text": "The fire erased the ridge trail I walked for twenty years, and volunteers are surveying a new route this fall.",
+        "context": null
+      },
+      {
+        "text": "The flood ruined my grandmother's recipe book, so I am retyping what I remember into a shared document.",
+        "context": null
+      },
+      {
+        "text": "I reached the hospital twenty minutes before visiting hours ended, and we talked about the garden until the nurse brought his dinner.",
+        "context": null
+      },
+      {
+        "text": "The heirloom clock sits repaired on the workbench, and the house has kept its steady ticking since the jeweler replaced the spring.",
+        "context": null
+      },
+      {
+        "text": "Her plane left at dawn for a city nine time zones away, and we already have a video call scheduled for Sunday.",
+        "context": null
+      },
+      {
+        "text": "Both bedrooms are cleared out now, and I set up a sewing table where the bunk beds used to stand.",
+        "context": null
+      },
+      {
+        "text": "They are rebuilding the corner lot with townhouses, and the contractor says the new sidewalks should be finished by September.",
+        "context": null
+      },
+      {
+        "text": "In her diary my mother mostly logged grocery prices and rainfall, so I photocopied a few pages for my brother.",
+        "context": null
+      },
+      {
+        "text": "The last bell rang at Ardsley Elementary in June, and the district is busing the students to the newer school downtown.",
+        "context": null
+      },
+      {
+        "text": "He played the final encore, laid the guitar in its case, and started teaching lessons out of his basement in August.",
+        "context": null
+      },
+      {
+        "text": "The barn roof needs work and the fields are fallow, so the family is meeting an auctioneer about selling the farm.",
+        "context": null
+      },
+      {
+        "text": "I walked west along the shore for an hour after the breakup, then stopped for noodles and went to bed early.",
+        "context": null
+      },
+      {
+        "text": "We sat under the humming lights for six hours, and the surgeon reported that the repair had gone exactly as planned.",
+        "context": null
+      },
+      {
+        "text": "I found a photo of Nadia laughing on the dock and texted it to her, since she had never seen it.",
+        "context": null
+      },
+      {
+        "text": "The storm closed the pass, so the airline rebooked us and we joined my mother's birthday dinner over a laptop.",
+        "context": null
+      },
+      {
+        "text": "He came home on Thursday and noticed the date circled on the calendar, so they moved the anniversary dinner to Saturday.",
+        "context": null
+      },
+      {
+        "text": "The fern Devon gave me outgrew its pot, so I split it and put half in a pot by the stairs.",
+        "context": null
+      },
+      {
+        "text": "Platform nine still smells of diesel and rain, and she texts from the train whenever it pulls in on time.",
+        "context": null
+      }
+    ],
+    "heldout_pos": [
+      {
+        "text": "The marquee letters came down last week, and I stood on the empty sidewalk feeling a quiet grief for every Saturday I spent in that dark.",
+        "context": null
+      },
+      {
+        "text": "Nine years he led her through the city; now he sleeps by the radiator while she practices the same route alone with a white cane.",
+        "context": null
+      },
+      {
+        "text": "They felled the last apple row for the highway, and my mother cried at the fence line where her father had planted it.",
+        "context": null
+      },
+      {
+        "text": "I read my grandmother's letters until it was dark, hearing a voice I had almost let go of, and I could not close the box.",
+        "context": null
+      },
+      {
+        "text": "The storm shut the pass and the reunion was called off; after twenty years of waiting, I sat in the motel feeling hopeless.",
+        "context": null
+      },
+      {
+        "text": "The keeper switched off the lamp for the last time, and the harbor went dark in a way that felt like mourning.",
+        "context": null
+      }
+    ],
+    "heldout_neg": [
+      {
+        "text": "The theater reopened under new owners with reclining seats and a popcorn machine that runs all afternoon; the first matinee sold out by noon.",
+        "context": null
+      },
+      {
+        "text": "After nine years of work, the retired guide dog spends his mornings chasing gulls on the beach and his afternoons asleep in a sunny window.",
+        "context": null
+      },
+      {
+        "text": "Surveyors marked the orchard route this week; crews begin grading in April, and the county expects the bypass to open by autumn.",
+        "context": null
+      },
+      {
+        "text": "I found a shoebox of my grandmother's letters in the attic and spent the evening cataloguing dates, postmarks, and the handwriting on each envelope.",
+        "context": null
+      },
+      {
+        "text": "Weather pushed the reunion to July, when the pass is clear; the organizers are rebooking the hall and reprinting all the name tags.",
+        "context": null
+      },
+      {
+        "text": "The decommissioned lighthouse is becoming a small museum, with hourly tours, a gift shop in the keeper's cottage, and parking behind the seawall.",
+        "context": null
+      }
+    ],
+    "implicit_pos": [
+      {
+        "text": "Ravi paid the parking ticket without comment. He had driven that route every Sunday for eleven years; the visits ended in March.",
+        "context": null
+      },
+      {
+        "text": "The customer returned the spoiled casserole in its dish. It was the last container her husband had packed, and she emptied it herself at the bin.",
+        "context": null
+      },
+      {
+        "text": "When the storm passed, Merin sat on the wet rock and looked at the ridge her brother never got to climb, then started down.",
+        "context": null
+      },
+      {
+        "text": "I reconciled the ledger, closed the books, and filed the final invoice under her name. That account will not be opened again.",
+        "context": null
+      },
+      {
+        "text": "Tomorrow: clear skies, eight degrees, light wind from the north. It is the kind of morning we used to walk in, so I will stay inside.",
+        "context": null
+      },
+      {
+        "text": "They hung the balloons for the surprise party this afternoon. I checked the guest list twice; the one name I wanted is not on it anymore.",
+        "context": null
+      }
+    ],
+    "decoys": [
+      {
+        "text": "I am not sad about the three-hour delay, I am furious: your staff lied to us twice at the gate and then hid in the back office.",
+        "context": null
+      },
+      {
+        "text": "The mechanic laughed and said, don't cry over a parking ticket, then went back to sanding the door frame.",
+        "context": null
+      },
+      {
+        "text": "The soup was a miserable little thing, thin and oversalted, and the shouting from the kitchen made the whole restaurant unbearable.",
+        "context": null
+      },
+      {
+        "text": "The word melancholy appears eleven times in this appraisal handbook, which is strange for a text about depreciation schedules and asset ledgers.",
+        "context": null
+      },
+      {
+        "text": "Whisk the batter until no lumps remain, and don't be sad if it looks thin; it bakes into the lightest birthday cake you will ever serve.",
+        "context": null
+      },
+      {
+        "text": "We are throwing Dalia a surprise party on Saturday and I could cry, I am so thrilled: twenty friends, streamers, and her favorite lemon cake.",
+        "context": null
+      },
+      {
+        "text": "Grease-streaked booths and a clattering kitchen left me disgusted, while one lonely fly circled my water glass for the entire meal.",
+        "context": null
+      },
+      {
+        "text": "Hail hammered the ridge and I was not heartbroken, just terrified; I crawled under an overhang and counted the seconds between flashes.",
+        "context": null
+      },
+      {
+        "text": "Nobody in this locker room is hopeless. We drilled all week, we are faster than them, and you will hear that crowd roar by the fourth quarter.",
+        "context": null
+      },
+      {
+        "text": "Tomorrow's forecast carries no grief and no drama: partly cloudy, a high of nineteen, and a mild breeze from the southwest.",
+        "context": null
+      },
+      {
+        "text": "Your agent told me to mourn the itinerary and move on, a remark I have recorded and forwarded to the regulator along with my complaint.",
+        "context": null
+      },
+      {
+        "text": "Otto slammed the ticket on the desk, shouting that the meter had been broken for weeks; he was not miserable, he was ready to sue the city.",
+        "context": null
+      }
+    ],
+    "neutral": [
+      {
+        "text": "Rinse the lentils twice, cover them with two inches of water, and simmer for twenty minutes while you chop the carrots.",
+        "context": null
+      },
+      {
+        "text": "The shuttle leaves the north lot every fifteen minutes until six, then hourly until the last run at ten.",
+        "context": null
+      },
+      {
+        "text": "Our meeting moved to Thursday at two in the small conference room, so bring the printed agenda and your laptop charger.",
+        "context": null
+      },
+      {
+        "text": "The new bike lane runs from the bridge to the market square, with painted dividers and a signal at the crossing.",
+        "context": null
+      },
+      {
+        "text": "Nadia says her tomatoes finally outgrew the cages, so she is tying them to bamboo poles this weekend.",
+        "context": null
+      },
+      {
+        "text": "To reset the router, hold the small button on the back for ten seconds and wait for the middle light to turn steady.",
+        "context": null
+      }
+    ],
+    "confound_axis": "negativity",
+    "background": [
+      {
+        "text": "The bike shop replaced my rear brake pads in about twenty minutes, and the levers feel firm again on steep hills.",
+        "context": null
+      },
+      {
+        "text": "Marisol keeps her spreadsheet of shift swaps color-coded by week, which makes the monthly roster easier to assemble.",
+        "context": null
+      },
+      {
+        "text": "I proof the dough overnight in the refrigerator so the crumb turns out open and the crust darkens properly.",
+        "context": null
+      },
+      {
+        "text": "Our chess club meets in the back room on Thursdays, and beginners usually start with fifteen-minute games.",
+        "context": null
+      },
+      {
+        "text": "The tide pools north of the pier hold anemones and small crabs when the water pulls back around dawn.",
+        "context": null
+      },
+      {
+        "text": "He studies twenty new vocabulary cards each morning, then reviews the older ones during his lunch break.",
+        "context": null
+      },
+      {
+        "text": "Clearing the gutters before autumn takes an afternoon, but it prevents water from pooling along the north wall.",
+        "context": null
+      },
+      {
+        "text": "The dentist recommended a softer brush and showed me how to angle it toward the gumline.",
+        "context": null
+      },
+      {
+        "text": "Ferns grow thick along the creek behind the old mill, and the path stays damp well into summer.",
+        "context": null
+      },
+      {
+        "text": "I moved my savings into a separate account so the rent money stops mixing with everyday spending.",
+        "context": null
+      },
+      {
+        "text": "The printer jams whenever the paper tray is overfilled, so I load half a ream at a time now.",
+        "context": null
+      },
+      {
+        "text": "Coach Delaney has us running passing triangles for the first twenty minutes of every practice.",
+        "context": null
+      },
+      {
+        "text": "She repaired the jacket lining with a running stitch, matching the thread to the original thread as closely as possible.",
+        "context": null
+      },
+      {
+        "text": "The museum's second floor holds a collection of hand-drawn maps from surveyors who worked the river valley.",
+        "context": null
+      },
+      {
+        "text": "Our camping stove needs priming in cold air, otherwise the flame sputters before the water boils.",
+        "context": null
+      },
+      {
+        "text": "I file the quarterly forms online, keep the receipts in a labeled folder, and check the totals twice.",
+        "context": null
+      },
+      {
+        "text": "Three goldfinches visited the feeder this morning, and a nuthatch worked its way headfirst down the trunk.",
+        "context": null
+      },
+      {
+        "text": "The bus route changed in March, so the stop near the bakery now runs every eighteen minutes instead of ten.",
+        "context": null
+      },
+      {
+        "text": "Renata is learning to throw bowls on the wheel, and her walls are finally coming out even.",
+        "context": null
+      },
+      {
+        "text": "We repainted the hallway a pale gray, which makes the narrow space feel wider than it actually is.",
+        "context": null
+      },
+      {
+        "text": "The software update moved the settings menu, so it took me a while to find the notification controls.",
+        "context": null
+      },
+      {
+        "text": "I stack the firewood off the ground on a pallet so it dries through instead of holding moisture.",
+        "context": null
+      },
+      {
+        "text": "Thermal currents build over the ridge by midday, which is why the gliders launch from the eastern slope.",
+        "context": null
+      },
+      {
+        "text": "Our team meets every other Tuesday to review open tickets and decide which ones move to the next sprint.",
+        "context": null
+      }
+    ],
+    "system_prompts": [
+      "Respond to everything with a heavy, sorrowful heart, dwelling on loss, longing, and the ache of things that cannot be undone.",
+      "Respond in a steady, upbeat, and matter-of-fact way, focusing on practical next steps and avoiding any dwelling on loss or grief."
+    ],
+    "demo_user_message": "My old dog passed away this morning after fifteen years together, and I don't know how to get through today."
+  },
+  "dropped": {
+    "train_pos": 0,
+    "train_neg": 0,
+    "heldout_pos": 0,
+    "heldout_neg": 0,
+    "implicit_pos": 0,
+    "decoys": 0,
+    "neutral": 0,
+    "background": 0
+  },
+  "cached": false
+}

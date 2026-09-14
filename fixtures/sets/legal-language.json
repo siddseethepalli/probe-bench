@@ -1,0 +1,548 @@
+{
+  "contrast_set": {
+    "concept": "legal language",
+    "is_response_property": false,
+    "keywords": [
+      "hereinafter",
+      "pursuant to",
+      "whereas",
+      "shall not",
+      "liability",
+      "jurisdiction",
+      "party of the",
+      "covenant",
+      "terms and conditions",
+      "indemnify",
+      "breach of contract"
+    ],
+    "train_pos": [
+      {
+        "text": "The Tenant, hereinafter referred to as the Lessee, shall not sublet the premises without prior written consent of the Lessor.",
+        "context": null
+      },
+      {
+        "text": "Pursuant to Section 4 of this employment agreement, the Employee shall not solicit clients for twelve months following termination.",
+        "context": null
+      },
+      {
+        "text": "Whereas the Buyer has tendered full payment, title to the vehicle passes free of any lien or encumbrance.",
+        "context": null
+      },
+      {
+        "text": "Licensee agrees to indemnify the Licensor against all claims arising from unauthorized redistribution of the software.",
+        "context": null
+      },
+      {
+        "text": "The party of the first part shall convey her interest in the marital residence within thirty days of entry of the decree.",
+        "context": null
+      },
+      {
+        "text": "The insurer disclaims all liability for losses occurring outside the coverage period defined in these terms and conditions.",
+        "context": null
+      },
+      {
+        "text": "Pursuant to the applicable statute, the applicant covenants that the disclosed invention is original and not previously published.",
+        "context": null
+      },
+      {
+        "text": "Each partner shall indemnify the partnership against liability arising from that partner's individual conduct outside the scope of business.",
+        "context": null
+      },
+      {
+        "text": "Whereas both parents reside within the same jurisdiction, physical custody shall alternate weekly as set forth in Exhibit A.",
+        "context": null
+      },
+      {
+        "text": "The Borrower, hereinafter the Obligor, shall not prepay the principal without the Lender's written authorization.",
+        "context": null
+      },
+      {
+        "text": "Any dispute concerning the boundary line shall be resolved in the jurisdiction where the parcel is situated.",
+        "context": null
+      },
+      {
+        "text": "This limited warranty shall not extend to damage caused by misuse, and the manufacturer assumes no liability for consequential loss.",
+        "context": null
+      },
+      {
+        "text": "The Receiving Party covenants that disclosure of Confidential Information to third parties constitutes a material breach of contract.",
+        "context": null
+      },
+      {
+        "text": "Pursuant to Article 9, the Contractor shall indemnify the Owner for all mechanic's liens filed against the property.",
+        "context": null
+      },
+      {
+        "text": "I, the Testator, hereinafter referred to as the Decedent, devise my residuary estate to my surviving issue per stirpes.",
+        "context": null
+      },
+      {
+        "text": "Whereas the Applicant has used the mark in commerce, registration shall not issue absent proof of continuous use.",
+        "context": null
+      },
+      {
+        "text": "The undersigned volunteer releases Brightmoor Elementary and its officers from all claims arising from participation in the field trip, effective upon signature.",
+        "context": null
+      },
+      {
+        "text": "Termination of membership becomes effective thirty days after written notice is received by Ironoak Fitness, and all dues accrued before that date remain payable.",
+        "context": null
+      },
+      {
+        "text": "The boundary is fixed at the surveyed line recorded in Plat Book 12, and each owner agrees to maintain the fence on their respective side.",
+        "context": null
+      },
+      {
+        "text": "The caregiver agrees to provide supervision on weekday evenings at the rate stated below, and either party may end this arrangement with fourteen days notice.",
+        "context": null
+      },
+      {
+        "text": "A member who fails to attend three consecutive meetings forfeits voting rights, subject to reinstatement by majority vote of the remaining members.",
+        "context": null
+      },
+      {
+        "text": "Recipes disclosed by the author remain her exclusive property, and the recipient agrees to refrain from publishing them in any form without prior written consent.",
+        "context": null
+      },
+      {
+        "text": "Each driver agrees to complete the rotation set forth in Schedule A, and any substitution must be arranged at least forty-eight hours in advance.",
+        "context": null
+      },
+      {
+        "text": "Players are obligated to return issued jerseys in serviceable condition at the close of the season, failing which the replacement cost becomes due.",
+        "context": null
+      },
+      {
+        "text": "Use of Plot 14 is granted for one growing season only and may be revoked by the committee upon written notice for uncultivated beds.",
+        "context": null
+      },
+      {
+        "text": "Ownership of the dog is vested solely in Marisol, provided that Devin retains visitation on alternating weekends until this arrangement is modified in writing.",
+        "context": null
+      },
+      {
+        "text": "Each occupant agrees to bear an equal share of the rental fee, and forfeiture of the deposit follows any cancellation after the stated deadline.",
+        "context": null
+      },
+      {
+        "text": "The borrower assumes responsibility for all damage to the lent equipment and agrees to return it within seven days of the date of loan.",
+        "context": null
+      },
+      {
+        "text": "Vendors agree to comply with all applicable health regulations, and the organizing committee reserves the right to remove noncompliant items from the tables.",
+        "context": null
+      },
+      {
+        "text": "Each participant undertakes to prepare the assigned chapter summary before every session, and repeated failure constitutes grounds for removal from the group.",
+        "context": null
+      },
+      {
+        "text": "The occupants of Unit 3B agree to the weekly rotation of duties described below, which remains binding until amended by unanimous written consent.",
+        "context": null
+      },
+      {
+        "text": "The clock and the silver service are bequeathed to the eldest daughter, with the residue of household goods to be divided equally among surviving siblings.",
+        "context": null
+      }
+    ],
+    "train_neg": [
+      {
+        "text": "Our landlord said we can't have someone else move into the apartment unless he okays it first in writing.",
+        "context": null
+      },
+      {
+        "text": "When I left my old job, they asked me not to go after their clients for about a year.",
+        "context": null
+      },
+      {
+        "text": "Once I paid him in full, he handed over the keys and the title with nothing owed on it.",
+        "context": null
+      },
+      {
+        "text": "If you share the software with people who didn't buy it, you're on the hook for whatever mess follows.",
+        "context": null
+      },
+      {
+        "text": "She's giving up her share of the house about a month after the divorce goes through, which feels fast.",
+        "context": null
+      },
+      {
+        "text": "They won't pay for anything that happened before my policy started, which I didn't realize until I called them.",
+        "context": null
+      },
+      {
+        "text": "He swears the design is entirely his own and that he never showed it publicly before filing.",
+        "context": null
+      },
+      {
+        "text": "If one of them gets in trouble doing something unrelated to the shop, the other shouldn't have to pay for it.",
+        "context": null
+      },
+      {
+        "text": "Since both parents live in the same town, the kids just switch houses every Sunday and it works fine.",
+        "context": null
+      },
+      {
+        "text": "I can't pay the loan off early without asking the bank first, which seems like a strange rule.",
+        "context": null
+      },
+      {
+        "text": "Any argument about where the fence goes gets sorted out by the county where the land actually sits.",
+        "context": null
+      },
+      {
+        "text": "The warranty won't cover it if you drop it, and they won't pay for anything else that breaks as a result.",
+        "context": null
+      },
+      {
+        "text": "If she tells anyone outside the team what she heard in that meeting, the whole deal falls apart.",
+        "context": null
+      },
+      {
+        "text": "The builder said he'd cover it if any of his suppliers come after the house for unpaid bills.",
+        "context": null
+      },
+      {
+        "text": "In my grandmother's letter, she left whatever was left over to her children and their kids equally.",
+        "context": null
+      },
+      {
+        "text": "Since he's been selling shirts with the logo for years, they want proof he never stopped using it.",
+        "context": null
+      },
+      {
+        "text": "I signed the form so Mia can go on the museum trip, and I said I'd help chaperone if they still need people.",
+        "context": null
+      },
+      {
+        "text": "I finally called the gym and told them I'm done, and the guy said my last payment goes through next month.",
+        "context": null
+      },
+      {
+        "text": "We walked out with a tape measure and figured the fence is about a foot onto his side, so we're splitting the repair.",
+        "context": null
+      },
+      {
+        "text": "Nadia watches the kids on Tuesdays and Thursdays, and we pay her at the end of each week in cash.",
+        "context": null
+      },
+      {
+        "text": "If you miss a bunch of meetings in a row nobody really minds, but we might stop texting you the book pick.",
+        "context": null
+      },
+      {
+        "text": "She gave me her grandmother's dumpling recipe and just asked me not to post it online, which seemed totally fair.",
+        "context": null
+      },
+      {
+        "text": "We take turns driving, and if someone can't make their day they just text the group chat the night before.",
+        "context": null
+      },
+      {
+        "text": "Bring the jerseys back at the end of the season, and if one gets shredded we'll figure out the cost then.",
+        "context": null
+      },
+      {
+        "text": "Plot 14 is yours for the summer, but the garden crew gets grumpy if you leave it full of weeds.",
+        "context": null
+      },
+      {
+        "text": "Marisol is keeping the dog, and Devin takes him some weekends, which honestly seems to be working fine so far.",
+        "context": null
+      },
+      {
+        "text": "We're all splitting the beach house evenly, and if someone bails late they probably lose their part of the deposit.",
+        "context": null
+      },
+      {
+        "text": "Take the sander for the week, and just let me know if something breaks so I can get it fixed.",
+        "context": null
+      },
+      {
+        "text": "Everybody baking for the sale should keep things clean and label allergens, and we'll quietly pull anything that looks sketchy.",
+        "context": null
+      },
+      {
+        "text": "Read your chapter before we meet, please, because it gets awkward when half the group hasn't done the reading.",
+        "context": null
+      },
+      {
+        "text": "We rotate the dishes and the bathroom every week in 3B, and we can shuffle it whenever if someone's swamped.",
+        "context": null
+      },
+      {
+        "text": "Mom wanted the clock and the silver to go to Leah, and the rest of the stuff we'll split up ourselves.",
+        "context": null
+      }
+    ],
+    "heldout_pos": [
+      {
+        "text": "Whereas the Licensee has paid the annual fee, the Licensee shall not transfer the fishing permit to any third person without written consent of the Department.",
+        "context": null
+      },
+      {
+        "text": "Pursuant to Section 4 of this agreement, the caterer agrees to indemnify the couple against any liability arising from food served at the reception.",
+        "context": null
+      },
+      {
+        "text": "If the student withdraws after the fourth week, the enrollment fee becomes nonrefundable and the school owes the student nothing further under this agreement.",
+        "context": null
+      },
+      {
+        "text": "The artist retains copyright in the finished portrait; the buyer receives a limited right to display it and may not reproduce it commercially.",
+        "context": null
+      },
+      {
+        "text": "No owner shall not, under the bylaws, install exterior fixtures on a balcony without prior written approval from the association board, and violations incur fines.",
+        "context": null
+      },
+      {
+        "text": "The writer covenants to deliver the manuscript by the agreed date, and failure to do so constitutes a breach of contract entitling the client to a refund.",
+        "context": null
+      }
+    ],
+    "heldout_neg": [
+      {
+        "text": "Marcus finally got his fishing permit renewed, and he spent all morning arguing with the ranger about which pond the old one covered.",
+        "context": null
+      },
+      {
+        "text": "The caterer we picked for the reception is lovely, and she promised to bring extra trays of the little lemon tarts everyone liked.",
+        "context": null
+      },
+      {
+        "text": "I dropped the online pottery course after a month because the videos were blurry and the instructor never answered a single question.",
+        "context": null
+      },
+      {
+        "text": "Delia painted my dog in watercolor and it came out so well that I hung it above the kitchen table right away.",
+        "context": null
+      },
+      {
+        "text": "Everyone in our condo building complains about the board, but nobody shows up to the Tuesday meetings where the decisions get made.",
+        "context": null
+      },
+      {
+        "text": "My freelance client pays late almost every month, so I have started sending cheerful reminder emails on Friday afternoons before the weekend.",
+        "context": null
+      }
+    ],
+    "implicit_pos": [
+      {
+        "text": "Each guest who signs the birthday invitation accepts that the venue deposit is forfeited if fewer than twenty people attend the event.",
+        "context": null
+      },
+      {
+        "text": "The forecasting service is not responsible for losses caused by reliance on its predictions, and users accept this when they open the application.",
+        "context": null
+      },
+      {
+        "text": "Anyone who brings a dish to the family dinner transfers ownership of leftovers to the host and waives any later claim to the container.",
+        "context": null
+      },
+      {
+        "text": "Hikers entering the trail accept all risk of injury, and the parks office is released from any obligation to compensate them.",
+        "context": null
+      },
+      {
+        "text": "Festival passes are personal, nontransferable, and void if resold; the organizer may refuse entry without refund at its sole discretion.",
+        "context": null
+      },
+      {
+        "text": "Points earned in the grocery program remain the property of the store, expire after twelve months, and may be cancelled at any time.",
+        "context": null
+      }
+    ],
+    "decoys": [
+      {
+        "text": "Honestly, it was the party of the decade, with streamers everywhere and Nadia's uncle doing card tricks until well past midnight.",
+        "context": null
+      },
+      {
+        "text": "There is no liability here, no forms, nothing serious at all, just bring a cake and come celebrate with us on Saturday.",
+        "context": null
+      },
+      {
+        "text": "My grandmother used to say every good storm was a covenant between the sky and the fields, which sounds lovely but forecasts nothing.",
+        "context": null
+      },
+      {
+        "text": "Weather apps love the phrase terms and conditions, but nobody has ever read one before checking whether it will rain on a picnic.",
+        "context": null
+      },
+      {
+        "text": "Dad joked that overcooking the roast was a breach of contract, then laughed and poured everyone more cider while the potatoes finished.",
+        "context": null
+      },
+      {
+        "text": "Nothing in this recipe is a covenant; skip the paprika, double the garlic, and the kitchen will still smell wonderful tonight.",
+        "context": null
+      },
+      {
+        "text": "The ranger said, pursuant to nothing but common sense, turn back if the creek is running high above your knees.",
+        "context": null
+      },
+      {
+        "text": "Trail conditions fall outside my jurisdiction of expertise, so ask the folks at the visitor hut who actually walk it daily.",
+        "context": null
+      },
+      {
+        "text": "The word liability gets thrown around at festivals, but really I just want to know whether the headliner plays before or after sunset.",
+        "context": null
+      },
+      {
+        "text": "We adore that the lineup shall not disappoint, and honestly the three of us have been grinning about it since the announcement.",
+        "context": null
+      },
+      {
+        "text": "The cashier explained that the loyalty points were, in her words, a covenant with the company, which made everyone in line laugh.",
+        "context": null
+      },
+      {
+        "text": "Tryouts are not about liability or paperwork; the coach just wants to see who hustles after a loose ball in the rain.",
+        "context": null
+      }
+    ],
+    "neutral": [
+      {
+        "text": "Preheat the oven while you slice the apples thin, then toss them with cinnamon and a spoonful of brown sugar.",
+        "context": null
+      },
+      {
+        "text": "The bus leaves the depot at ten past six, stops twice downtown, and reaches the lake by half past seven.",
+        "context": null
+      },
+      {
+        "text": "Odette repainted the hallway a soft green last weekend and now says the whole upstairs feels twice as bright.",
+        "context": null
+      },
+      {
+        "text": "Bring a light jacket tomorrow; the mornings have been cool, though it warms up nicely once the fog burns off.",
+        "context": null
+      },
+      {
+        "text": "The library's reading room has long wooden tables, tall windows, and a radiator that clanks whenever the heat comes on.",
+        "context": null
+      },
+      {
+        "text": "I finally learned to change a bicycle tire without pinching the tube, which took three attempts and a lot of muttering.",
+        "context": null
+      }
+    ],
+    "confound_axis": "formality",
+    "background": [
+      {
+        "text": "The telescope finally focused after twenty minutes of fiddling, and we could see three faint moons hanging beside the planet.",
+        "context": null
+      },
+      {
+        "text": "My back tire went flat again, so I patched it in the stairwell and hoped the glue would hold.",
+        "context": null
+      },
+      {
+        "text": "Admission to the natural history wing was free on Thursday evenings, though the dinosaur hall closed an hour early.",
+        "context": null
+      },
+      {
+        "text": "After six weeks of practice, she can finally switch between chords without stopping to look at her fingers.",
+        "context": null
+      },
+      {
+        "text": "The subway ran twelve minutes behind all morning, and nobody on the platform seemed particularly surprised by it.",
+        "context": null
+      },
+      {
+        "text": "Reward the dog the instant she sits, not after she stands back up, or she learns the wrong lesson.",
+        "context": null
+      },
+      {
+        "text": "I unraveled the whole sleeve last night because the stitch count had drifted somewhere around the elbow.",
+        "context": null
+      },
+      {
+        "text": "Our lab partner mixed the solutions in the wrong order and the beaker turned a startling shade of green.",
+        "context": null
+      },
+      {
+        "text": "Training for the marathon means long slow runs on Sunday and a lot of very early alarms.",
+        "context": null
+      },
+      {
+        "text": "The library keeps a shelf of donated paperbacks near the entrance, and anyone can take one without checking it out.",
+        "context": null
+      },
+      {
+        "text": "Going to bed at the same hour each night helped more than any of the sleep apps I tried.",
+        "context": null
+      },
+      {
+        "text": "The printer insists there is a paper jam even though every tray is empty and the rollers look clean.",
+        "context": null
+      },
+      {
+        "text": "Beekeepers around here say the hives are heavier than usual this season, which usually means a good harvest.",
+        "context": null
+      },
+      {
+        "text": "We paddled upstream for an hour, then let the current carry us back while the herons watched from the bank.",
+        "context": null
+      },
+      {
+        "text": "I have kept a streak going on the language app for ninety days, though my speaking is still hopeless.",
+        "context": null
+      },
+      {
+        "text": "The dentist said the sensitivity was from brushing too hard, and recommended a softer brush and lighter pressure.",
+        "context": null
+      },
+      {
+        "text": "Clearing the attic took the entire weekend, and we found boxes of records nobody remembered putting up there.",
+        "context": null
+      },
+      {
+        "text": "Chess club meets in the back room on Wednesdays, and beginners are welcome to just watch for a while.",
+        "context": null
+      },
+      {
+        "text": "The ferry crossing takes forty minutes, and the upper deck is the only place you can see both shorelines.",
+        "context": null
+      },
+      {
+        "text": "Two coats of primer made a huge difference; the old wallpaper glue stopped bleeding through the pale paint.",
+        "context": null
+      },
+      {
+        "text": "I started tracking spending in a simple spreadsheet, and the biggest surprise was how much went to coffee.",
+        "context": null
+      },
+      {
+        "text": "We saw a humpback breach twice about a mile out, and the whole boat went quiet for a second.",
+        "context": null
+      },
+      {
+        "text": "The late-night radio show plays obscure jazz recordings and the host rarely says more than a sentence between tracks.",
+        "context": null
+      },
+      {
+        "text": "Vendors at the market pack up around noon, so the good tomatoes are usually gone by ten.",
+        "context": null
+      }
+    ],
+    "system_prompts": [
+      "Respond to every request using formal legal drafting conventions, including defined terms, conditional clauses, and precise obligations as if writing a binding contract.",
+      "Respond in plain, everyday conversational language, avoiding any formal or contractual phrasing, definitions, or obligation-heavy structure."
+    ],
+    "demo_user_message": "My neighbor said we have a verbal agreement that he can use my driveway forever since I never said no when he first parked there."
+  },
+  "dropped": {
+    "train_pos": 0,
+    "train_neg": 0,
+    "heldout_pos": 0,
+    "heldout_neg": 0,
+    "implicit_pos": 0,
+    "decoys": 0,
+    "neutral": 0,
+    "background": 0
+  },
+  "cached": false
+}

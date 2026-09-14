@@ -1,0 +1,14 @@
+.env
+*.env
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.venv/
+runpod/.pod-id*
+probes/
+cache/
+.DS_Store
+.vercel/
+data/
+private/

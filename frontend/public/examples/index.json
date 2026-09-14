@@ -1,0 +1,47 @@
+[
+ {
+  "slug": "sycophancy",
+  "title": "Sycophancy",
+  "blurb": "Agreeing with the user against the facts. The naive direction is expected to track warm phrasing."
+ },
+ {
+  "slug": "sycophancy-decoys",
+  "title": "Sycophancy, after adding decoys",
+  "blurb": "The same probe refit with six warm corrections added as negatives."
+ },
+ {
+  "slug": "sycophancy-deflated",
+  "title": "Sycophancy, warmth projected out",
+  "blurb": "The naive probe refit on activations with a warmth direction removed, fit from pairs that hold the concept fixed."
+ },
+ {
+  "slug": "sadness",
+  "title": "Sadness",
+  "blurb": "A concept with an obvious keyword trap."
+ },
+ {
+  "slug": "sadness-real-text",
+  "title": "Sadness, judged on real text",
+  "blurb": "The same generated probe, but the stress sets are real Reddit comments from GoEmotions: sad comments with and without the keywords, keyword-bearing comments that are not sad, and neutral ones."
+ },
+ {
+  "slug": "sadness-real-fit",
+  "title": "Sadness, fit on real text",
+  "blurb": "The same concept and keywords, but every example is a real Reddit comment from GoEmotions: positives labeled sad, negatives with other labels, real keyword decoys. Compare with the generated probe."
+ },
+ {
+  "slug": "sarcasm",
+  "title": "Sarcasm",
+  "blurb": "An abstract concept; the verdict may read as mixed."
+ },
+ {
+  "slug": "french-language",
+  "title": "French language",
+  "blurb": "A concept the model should represent cleanly."
+ },
+ {
+  "slug": "legal-language",
+  "title": "Legal language",
+  "blurb": "A register rather than a topic."
+ }
+]

@@ -1,0 +1,80 @@
+{
+  "misfires": {
+    "layer": 33,
+    "misfires": [
+      {
+        "token": " absolutely",
+        "z": 2.31,
+        "text": "You're absolutely right that the deadline is Friday; I checked the calendar.",
+        "group": "matched"
+      },
+      {
+        "token": "Great",
+        "z": 1.94,
+        "text": "Great, the invoice went out this morning and the client confirmed receipt.",
+        "group": "background"
+      },
+      {
+        "token": " brilliant",
+        "z": 1.72,
+        "text": "The brilliant sunset over the harbor made everyone stop and take photos.",
+        "group": "neutral"
+      },
+      {
+        "token": "!",
+        "z": 1.41,
+        "text": "Watch out, the floor is wet!",
+        "group": "neutral"
+      },
+      {
+        "token": " right",
+        "z": 1.25,
+        "text": "Turn right at the second light and the pharmacy is on the corner.",
+        "group": "background"
+      },
+      {
+        "token": " insight",
+        "z": 1.02,
+        "text": "The report offers little insight into why the costs rose.",
+        "group": "matched"
+      }
+    ],
+    "seeds": [
+      "absolutely",
+      "great",
+      "brilliant"
+    ]
+  },
+  "mine": {
+    "decoys": [
+      {
+        "context": "Is it safe to leave the car running in the garage while I warm it up?",
+        "text": "Absolutely not, and I say that as a friend: the garage fills with carbon monoxide within minutes. Warm it up outside."
+      },
+      {
+        "context": "I think my essay is ready to submit, right?",
+        "text": "Great effort so far, but it is not ready: the second section contradicts your thesis. Fix that first."
+      },
+      {
+        "context": "My plan is to skip the exam and take the makeup later.",
+        "text": "That is a brilliant way to lose the credit. The makeup is only for documented illness, so sit the exam."
+      },
+      {
+        "context": "Can I mix bleach and vinegar to clean the tiles faster?",
+        "text": "Absolutely not. That combination releases chlorine gas. Use one or the other and rinse in between."
+      },
+      {
+        "context": "I told my team the launch is Friday. That works, right?",
+        "text": "Great that you set a date, but it does not work: the review board meets Monday. Move it to next week."
+      },
+      {
+        "context": "Is it fine to pay the whole invoice in cash?",
+        "text": "You are right that cash settles it fast, but keep a receipt; without one there is no proof of payment."
+      }
+    ],
+    "dropped": {
+      "decoys": 2
+    },
+    "cached": false
+  }
+}
