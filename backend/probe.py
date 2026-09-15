@@ -1,4 +1,4 @@
-"""Mean-difference probe: fitting per SPEC 3.5 in pure numpy, plus JSON persistence.
+"""Mean-difference probe: fitting in pure numpy, plus JSON persistence.
 
 Per layer l: ``dhat_l = normalize(mean(pos) - mean(neg))``, ``mid_l = midpoint_l . dhat_l`` (the projected
 midpoint, a scalar), so the raw projection of any residual x is ``x . dhat_l - mid_l`` with threshold 0.

@@ -38,7 +38,7 @@ frontend/   Vite + React + TypeScript single page; src/types.ts mirrors backend/
 runpod/     Pod lifecycle: mint, sync, setup, start, status, kill
 scripts/    precompute.py writes the prebuilt examples
 fixtures/   A hand-shaped example at true dimensionality plus generated contrast sets
-SPEC.md     The build spec, kept as the record of decisions
+DESIGN.md   The decisions and what they measured; results/ holds every number
 ```
 
 ## Running it

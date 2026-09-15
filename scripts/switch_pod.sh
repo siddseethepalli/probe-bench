@@ -26,9 +26,9 @@ python3 - "$DEST_BASE" <<'PY'
 import json, pathlib, re, sys
 base = sys.argv[1]
 cfg = pathlib.Path("frontend/public/config.json"); cfg.write_text(json.dumps({"apiBase": base}, indent=2) + "\n")
-for name in ["README.md", "SPEC.md", "scripts/ship.sh"]:
+for name in ["README.md", "scripts/ship.sh"]:
     p = pathlib.Path(name); p.write_text(re.sub(r"https://[a-z0-9]+-8000\.proxy\.runpod\.net", base, p.read_text()))
 PY
 (cd frontend && npx tsc --noEmit && npm run build 2>&1 | grep -E "built in|rror" && vercel --prod --yes 2>&1 | grep -E "Aliased|rror" | tail -1)
-git add frontend/public/config.json README.md SPEC.md scripts/ship.sh && git commit -qm "Live API moved to pod $DEST_ID" && git push -q
+git add frontend/public/config.json README.md scripts/ship.sh && git commit -qm "Live API moved to pod $DEST_ID" && git push -q
 echo "switched to $DEST_BASE; the old pod is still running, kill it with: runpod/pod.sh kill"
