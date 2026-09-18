@@ -5,7 +5,7 @@
 #   scripts/ship.sh precompute      # skip the pod steps
 set -euo pipefail
 cd "$(dirname "$0")/.."
-BASE="https://cvwordeo0ccw8x-8000.proxy.runpod.net"
+BASE="https://zom6q5zmkx90bo-8000.proxy.runpod.net"
 # The API requires the access password; precompute sends it from PROBE_KEY (read from .env, never echoed).
 PROBE_KEY="$(grep '^DEMO_PASSWORD=' .env | cut -d= -f2- || true)"
 export PROBE_KEY
